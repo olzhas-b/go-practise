@@ -2,9 +2,10 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"learning/hello-world-crud/controllers"
+	"github.com/olzhas-b/hello-world-crud/controllers"
+	"github.com/olzhas-b/hello-world-crud/db"
+	"gorm.io/gorm"
 )
-
 
 func handleRequest(r *gin.Engine) {
 	r.GET("/user", controllers.GetUser)
@@ -13,32 +14,10 @@ func handleRequest(r *gin.Engine) {
 	r.PUT("/user", controllers.PutUser)
 	r.DELETE("/user", controllers.DeleteUser)
 }
-
-
+var dataBase *gorm.DB
 func main() {
 	r := gin.Default()
+	dataBase = db.InitDataBase()
 	handleRequest(r)
 	r.Run(":3000") // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
 }
-
-//type Product struct {
-//	gorm.Model
-//	Code string
-//	Price uint
-//}
-//
-//func main() {
-//	db, err := gorm.Open(sqlite.Open("test.db"), &gorm.Config{})
-//	if err != nil {
-//		panic("failed to connect database")
-//	}
-//	db.AutoMigrate(&Product{})
-//	//
-//	db.Create(&Product{Code: "D42", Price: 100})
-//
-//	var product Product
-//	db.First(&product, 1)
-//	db.First(&product, "code=?", "D42")
-//	fmt.Printf("%v", product)
-//}
-

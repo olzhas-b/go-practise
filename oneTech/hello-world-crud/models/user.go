@@ -1,12 +1,21 @@
 package models
 
-import "gorm.io/gorm"
-
+import (
+	"gorm.io/gorm"
+)
 type User struct {
 	gorm.Model `json:"gorm_model"`
-	ID         uint   `gorm:"primary_key" form:"ID" json:"ID" binding:"required"`
-	Login      string `form:"login" json:"login" binding:"required"`
-	Name       string `form:"name" json:"name" binding:"required"`
-	Phone      string `form:"phone" json:"phone" binding:"required"`
+	ID	   	   uint   `gorm:"primaryKey"`
+	Email      string
+	Password   string
+	Name       string
+	Phone      string
 }
+
+//type Message struct {
+//	gorm.Model
+//	Title string
+//	Time time.Time
+//	UserID uint
+//}
 

@@ -3,11 +3,11 @@ package controllers
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"learning/hello-world-crud/models"
+	"github.com/olzhas-b/hello-world-crud/models"
 	"net/http"
 )
-
 func GetUser(c *gin.Context)  {
+	//dp := db.GetDataBase()
 	c.JSON(200, gin.H{
 		"message": "userData must be here",
 	})
@@ -26,8 +26,8 @@ func PostUser(c *gin.Context)  {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
-	fmt.Printf("id: %d; name: %s; login: %s; phone: %s", user.ID, user.Name, user.Login, user.Phone)
-	c.String(200, fmt.Sprintf("id: %d; name: %s; login: %s; phone: %s", user.ID, user.Name, user.Login, user.Phone))
+	fmt.Printf("id: %d; name: %s; login: %s; phone: %s", user.ID, user.Name, user.Email, user.Phone)
+	c.String(200, fmt.Sprintf("id: %d; name: %s; login: %s; phone: %s", user.ID, user.Name, user.Email, user.Phone))
 	return
 }
 
@@ -37,7 +37,7 @@ func PutUser(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
-	c.String(200, fmt.Sprintf("id: %d; name: %s; login: %s; phone: %s", user.ID, user.Name, user.Login, user.Phone))
+	c.String(200, fmt.Sprintf("id: %d; name: %s; login: %s; phone: %s", user.ID, user.Name, user.Email, user.Phone))
 	return
 }
 
