@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2150696b-c573-42fb-aa10-07cf74a641cf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/hello-world-crud.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hello-world-crud.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/tasks.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/tasks.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello-world-crud.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson2/exec/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson2/exec/.idea/exec.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson2/exec/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson2/exec/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson2/exec/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson2/exec/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson2/library/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson2/library/.idea/library.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson2/library/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson2/library/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson2/library/Sum.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson2/library/go.mod" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +31,16 @@
   <component name="GOROOT" url="file:///usr/lib/go-1.16" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/go.mod" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/server.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/controllers/tasks.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/db/connection.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/models/user.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/go.sum" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e5f5c800-c654-405f-9b6f-412c5547e7af/console.sql" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/db/.env" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1tUcjnzNkbqDXphZaiWeGazVtKZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
