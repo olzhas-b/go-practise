@@ -2,12 +2,10 @@ package main
 
 import (
 	"bytes"
-	"os"
 	"testing"
 )
 
-const testFullResult = `
-├───project
+const testFullResult = `├───project
 │	├───file.txt (19b)
 │	└───gopher.png (70372b)
 ├───static
@@ -39,15 +37,16 @@ const testFullResult = `
 `
 
 func TestTreeFull(t *testing.T) {
-	out := new(os.File)
+	out := new(bytes.Buffer)
 	err := dirTree(out, "testdata", true)
 	if err != nil {
 		t.Errorf("test for OK Failed - error")
 	}
-	result := out.Str
+	result := out.String()
 	if result != testFullResult {
 		t.Errorf("test for OK Failed - results not match\nGot:\n%v\nExpected:\n%v", result, testFullResult)
 	}
+	println("length", len(result), len(testFullResult))
 }
 
 const testDirResult = `├───project
